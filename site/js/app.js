@@ -16,7 +16,7 @@ Firstname.onclick = function(){
     }
     else{
         if(num >= 12)num = 1; else num++;
-        $ajaxUtils.sendGetRequest("https://reqres.in/api/users/"+num,function(response){
+        $ajaxUtils.sendGetRequest("https://practicenode2.herokuapp.com/users"+num,function(response){
             const json =  (JSON.parse(response.responseText))[0];
             Firstname.innerText = json.first_name +" "+ json.last_name;
             Email.innerText = json.email;
