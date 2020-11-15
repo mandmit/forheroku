@@ -1,4 +1,4 @@
-const Pool = require('pgs').Pool
+const Pool = require('pg').Pool
 const pool = new Pool({
  host: 'ec2-54-246-115-40.eu-west-1.compute.amazonaws.com',
   database: 'd39p1s370btatt',
